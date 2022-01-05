@@ -169,6 +169,7 @@ WHERE rental_rate = 0.99 ;
 SELECT COUNT(DISTINCT replacement_cost) FROM film
 WHERE length > 150 ;
 </details>
+
 ## :brain: Ödev 7
 
 ### :question: SORU 
@@ -199,6 +200,7 @@ GROUP BY country_id
 ORDER BY COUNT(city) DESC 
 LIMIT 1 ;
 </details>
+
 ## :brain: Ödev 8
 
 ### :question: SORU 
