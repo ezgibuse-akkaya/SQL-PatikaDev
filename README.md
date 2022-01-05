@@ -82,3 +82,31 @@ WHERE title ILIKE '%T%T%T%T%' ;
 SELECT * FROM film
 WHERE title LIKE 'C%' AND length > 90 AND rental_rate = 2.99 ;
 </details>
+
+## :brain: Ödev 4
+
+### :question: SORU 
+Aşağıdaki sorgu senaryolarını dvdrental örnek veri tabanı üzerinden gerçekleştiriniz.
+
+1-film tablosunda bulunan replacement_cost sütununda bulunan birbirinden farklı değerleri sıralayınız.
+2-film tablosunda bulunan replacement_cost sütununda birbirinden farklı kaç tane veri vardır?
+3-film tablosunda bulunan film isimlerinde (title) kaç tanesini T karakteri ile başlar ve aynı zamanda rating 'G' ye eşittir?
+4-country tablosunda bulunan ülke isimlerinden (country) kaç tanesi 5 karakterden oluşmaktadır?
+5-city tablosundaki şehir isimlerinin kaç tanesi 'R' veya r karakteri ile biter?
+### :green_square: CEVAP
+
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+SELECT DISTINCT replacement_cost FROM film ;
+
+SELECT COUNT(DISTINCT replacement_cost) FROM film ;
+
+SELECT COUNT(*) FROM film
+WHERE title LIKE 'T%' AND rating = 'G' ;
+
+SELECT COUNT(*) FROM country
+WHERE country LIKE '_____' ;
+
+SELECT COUNT(*) FROM city
+WHERE city ILIKE '%R' ;
+</details>
